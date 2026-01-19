@@ -1,0 +1,72 @@
+% Assignment template using exam class
+\documentclass[12pt,addpoints]{exam}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{geometry}
+% Slightly tighter, balanced margins for readability
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{mdframed}
+
+% Header/footer setup
+\pagestyle{headandfoot}
+\firstpageheadrule
+\firstpageheader{Assignment 1: Title}{Course / Instructor}{Date}
+\runningheadrule
+\runningheader{Assignment 1: Title}{Your Name}{\thepage}
+\runningfooter{}{}{}
+
+% Boxed answer environment
+\newenvironment{answerbox}{\begin{mdframed}[linewidth=0.5pt]}{\end{mdframed}}
+
+\title{Assignment 1: Title}
+\author{Name: xxxx \quad ID: xxxx}
+\date{Date: 2026-1-19}
+
+\begin{document}
+
+\maketitle
+
+\begin{questions}
+
+\question[10] 设函数 $f(x) = x^3 - 3x + 1$。
+\begin{parts}
+    \part 求 $x=1$ 处的极值类型。
+    \part 写出该点的切线方程。
+\end{parts}
+
+\begin{answerbox}
+    \textbf{Solution:\\}
+    (a) 计算导数 $f'(x) = 3x^2 - 3$，在 $x=1$ 处，$f'(1) = 0$。\\ 计算二阶导数 $f''(x) = 6x$，在 $x=1$ 处，$f''(1) = 6 > 0$，因此 $x=1$ 处有极小值。\\
+    (b) 切线方程为 $y - f(1) = f'(1)(x - 1)$，即 $y - (-1) = 0(x - 1)$，化简得 $y = -1$。
+    
+\end{answerbox}
+
+\question[10] Your second problem statement goes here.
+\begin{parts}
+    \part First part of the second problem.
+    \part Second part of the second problem.
+\end{parts}
+
+\begin{answerbox}
+    \textbf{Solution: \\ (a)} Solution to the first part.\\
+    \textbf{(b)} Solution to the second part.
+\end{answerbox}
+
+\question[10] Your third problem statement goes here.
+
+\begin{parts}
+    \part First part of the third problem.
+    \part Second part of the third problem.
+\end{parts}
+
+\begin{answerbox}
+    \textbf{Solution: \\ (a)} Solution to the first part.\\
+    \textbf{(b)} Solution to the second part.  
+\end{answerbox}
+
+\end{questions}
+
+\end{document}
